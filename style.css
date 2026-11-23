@@ -1,0 +1,201 @@
+
+/* Basic Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101827;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: #182338;
+    padding: 18px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #a78bfa;
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #a78bfa;
+}
+
+/* Home */
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+}
+
+.home-content {
+    max-width: 650px;
+}
+
+.welcome {
+    color: #a78bfa;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.home h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.home h1 span,
+.section h2 span {
+    color: #a78bfa;
+}
+
+.home h2 {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.home-content > p:not(.welcome) {
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #8b5cf6;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #6d28d9;
+}
+
+/* Common Sections */
+.section {
+    padding: 75px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.section > p {
+    max-width: 750px;
+    margin: auto;
+    color: #cbd5e1;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.skill {
+    background-color: #263449;
+    border: 1px solid #8b5cf6;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+/* Projects */
+.project-card {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    background-color: #1e293b;
+    border-radius: 12px;
+    border: 1px solid #475569;
+}
+
+.project-card p {
+    color: #cbd5e1;
+    margin-top: 10px;
+}
+
+.project-status {
+    color: #a78bfa !important;
+    font-size: 14px;
+}
+
+/* Contact */
+.social-link {
+    margin-top: 20px;
+}
+
+.social-link a {
+    color: #a78bfa;
+}
+
+/* Footer */
+footer {
+    background-color: #0a0b3c;
+    padding: 20px;
+    text-align: center;
+    color: #cbd5e1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .home {
+        min-height: 75vh;
+        padding: 50px 7%;
+    }
+
+    .home h1 {
+        font-size: 32px;
+    }
+
+    .section {
+        padding: 55px 7%;
+    }
+}
